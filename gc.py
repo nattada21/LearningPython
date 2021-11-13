@@ -20,4 +20,6 @@ for i in range(len(dna)):
     if dna[i] == 'G' or dna[i] == 'C':
         gc += 1
 
-print(gc/len(dna))
+print('%0.2f' % (gc/len(dna)))
+print('{:0.2f}'.format(gc/len(dna)))
+print(f'{gc/len(dna):0.2f}')
